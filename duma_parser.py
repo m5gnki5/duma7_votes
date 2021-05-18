@@ -6,12 +6,12 @@ import json
 
 PARSER = "html.parser"
 
-def collect_votes(doomer, page=0):
+def collect_votes(doomer: str, page=0: int) -> dict:
 	"""Parses all the votes of a given deputy from http://vote.duma.gov.ru.
 
 	Args:
-		doomer (str): id of a Duma deputy
-		page (int): number to start iteration from
+		doomer: id of a Duma deputy
+		page: number to start iteration from
 
 	Returns:
 		Dictionary of all unique projects as strings (keys)
